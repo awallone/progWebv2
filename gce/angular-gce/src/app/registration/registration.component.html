@@ -1,0 +1,50 @@
+<div class="container">
+
+  <h2>Inscription</h2>
+
+  <form #utilisateurajoutform = "ngForm" (ngSubmit) = "utilisateurajoutformsubmit()">
+
+  <div class = "form-group">
+    <label for= "id"> id: </label>
+    <input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.id" name="id"disabled>
+    </div>
+
+
+  <div class = "form-group">
+  <label for= "id"> Prénom: </label>
+  <input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.firstname" name="firstname">
+  </div>
+
+
+  <div class = "form-group">
+  <label for= "id"> Nom: </label>
+  <input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.lastname" name="lastname">
+  </div>
+
+
+<div class = "form-group">
+<label for= "id"> Numero de telephone: </label>
+<input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.phonenumber" name="phonenumber">
+</div>
+
+
+<div class = "form-group">
+<label for= "id"> Numero de licence: </label>
+<input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.licencenumber" name="licencenumber">
+</div>
+
+
+<div class = "form-group">
+<label for= "id"> email: </label>
+<input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.email" name="email">
+</div>
+
+<div class = "form-group">
+<label for= "id"> mot de passe: </label>
+<input type= "text" class = "form-control" required [(ngModel)] ="utilisateur.password" name="password">
+</div>
+
+<button type="submit" class="btn btn-success">S'inscrire</button>
+<button type="button" class="btn btn-primary" (click)="gotolist()">retour</button>
+  </form>
+  </div>

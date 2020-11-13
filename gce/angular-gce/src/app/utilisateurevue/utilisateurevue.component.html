@@ -1,0 +1,28 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>Prénom</th>
+      <th>Nom</th>
+      <th>Email</th>
+      <th>Numero de telephone</th>
+      <th>Numero de licence</th>
+      <th>Mot de passe</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <td>{{utilisateur.id}}</td>
+      <td>{{utilisateur.firstname}}</td>
+      <td>{{utilisateur.lastname}}</td>
+      <td>{{utilisateur.email}}</td>
+      <td>{{utilisateur.phonenumber}}</td>
+      <td>{{utilisateur.licencenumber}}</td>
+      <td>{{utilisateur.password}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<button type="button" class="btn btn-primary" (click)="gotolist()">retour</button>

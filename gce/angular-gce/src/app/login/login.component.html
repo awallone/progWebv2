@@ -1,0 +1,19 @@
+<div class="container">
+
+  <form #loginForm = "ngForm" (ngSubmit)= "loginUser()">
+<small class="danger">{{msg}} </small>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" placeholder="Entrez email" name="email" [(ngModel)]= "utilisateur.email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Mot de passe:</label>
+      <input type="password" class="form-control" placeholder="Entrez le Mot de passe" name="password" [(ngModel)]= "utilisateur.password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Se connecter</button>
+  </form>
+</div>
